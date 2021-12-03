@@ -283,7 +283,7 @@ Grace Hopper (Naval Commander and Eckert–Mauchly's first Director of Automatic
 
 \vspace{0.1 cm}
 \tiny
-\begin{verbatim}
+\begin{minted}{cobol}
       $ SET SOURCEFORMAT"FREE"
 IDENTIFICATION DIVISION.
 PROGRAM-ID.  Multiplier.
@@ -303,7 +303,7 @@ PROCEDURE DIVISION.
     MULTIPLY Num1 BY Num2 GIVING Result.
     DISPLAY "Result is = ", Result.
     STOP RUN.
-\end{verbatim}
+\end{minted}
 \normalsize
 \end{itemize}
 \end{onlyenv}\begin{onlyenv}<4>
@@ -594,6 +594,51 @@ March 1972
 \vspace{-5 cm}
 \mbox{\hspace{2 cm}\includegraphics[height=5.5 cm]{PLOTS/patchy-2.png}}
 \end{center}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Survey in 1987: still ``to share or not to share?''}
+\vspace{0.35 cm}
+\begin{columns}
+\column{0.7\linewidth}
+\only<1>{\includegraphics[width=\linewidth]{PLOTS/sharable-software-survey-1987.png}}\only<2>{\includegraphics[width=\linewidth]{PLOTS/sharable-software-survey-1987-highlight.png}}
+
+\column{0.3\linewidth}
+\small
+H.\ Johnstad and J.\ Nicholls
+
+\vspace{0.75 cm}
+{\it Producing and Supporting Sharable Software}
+
+\vspace{0.75 cm}
+2nd International Conference on Computing in High-Energy and Nuclear Physics (CHEP 1987)
+\end{columns}
+\end{frame}
+
+\begin{frame}{High energy physics became its own software universe}
+\vspace{0.25 cm}
+\begin{columns}[t]
+\column{0.55\linewidth}
+\begin{center}
+\begin{minipage}{0.9\linewidth}
+\begin{center}
+{\bf Bebo White}, {\it The Selection and Comparison of Programming Languages for High-Energy Physics Applications} (1991)
+\end{center}
+\end{minipage}
+\end{center}
+
+\includegraphics[width=\linewidth]{PLOTS/bebo-white-conclusions3.png}
+
+\column{0.55\linewidth}
+\begin{center}
+\begin{minipage}{0.85\linewidth}
+\begin{center}
+{\bf Ren\'e Brun}, {\it Technologies, Collaborations and Languages: 20 Years of HEP Computing} (2012)
+\end{center}
+\end{minipage}
+\end{center}
+
+\includegraphics[width=\linewidth]{PLOTS/rene-brun-introduction.png}
 \end{columns}
 \end{frame}
 
