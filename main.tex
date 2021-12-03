@@ -352,8 +352,8 @@ the stored-program/tape-drive paradigm.
 \hspace{-1 cm}\begin{minipage}{0.5\linewidth}
 \tiny
 \begin{minted}{fortran}
-C AREA OF A TRIANGLE - HERONS FORMULA
-C INTEGRAL VARIABLES START WITH I,J,K,L,M,N
+! AREA OF A TRIANGLE - HERON'S FORMULA
+! INTEGER-VALUED VARIABLES START WITH I,J,K,L,M, OR N
       READ(5,501) IA,IB,IC
   501 FORMAT(3I5)
       IF(IA.EQ.0 .OR. IB.EQ.0 .OR. IC.EQ.0) STOP 1
@@ -372,11 +372,40 @@ C INTEGRAL VARIABLES START WITH I,J,K,L,M,N
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Other first languages}
+\begin{frame}{Other first languages: the basis set}
+\vspace{0.35 cm}
+\begin{itemize}\setlength{\itemsep}{0.3 cm}
+\item \textcolor{darkblue}{LISP (John McCarthy/Steve Russel, 1958):} executable lambda calculus, data structures and code syntax are the same substance: lists of lists of lists\ldots
 
+\item \textcolor{darkblue}{ALGOL (ACM/GAMM committee, 1958):} imperative, block-structured, like C.
 
+\item \textcolor{darkblue}{Simula (Ole-Johan Dahl/Kristen Nygaard, 1962):} object-oriented programming.
 
+\item \textcolor{darkblue}{APL (Kenneth Iverson, 1966):} concise, interactive, operates on arrays.
+
+\item \textcolor{darkblue}{ISWIM (Peter Landin, 1966):} strongly typed functional programming, like Haskell.
+
+\item \textcolor{darkblue}{FORTH (Charles Moore, 1970):} no functions or syntax, just words and a stack.
+
+\item \textcolor{darkblue}{Prolog (Alain Colmerauer/Robert Kowalski, 1972):} first-order logic solver.
+
+\item \textcolor{darkblue}{SEQUEL (Donald Chamberlin/Raymond Boyce, 1973):} relational, SQL.
+\end{itemize}
+
+\begin{center}
+\LARGE
+All the rest are derivative.
+\end{center}
 \end{frame}
+
+\begin{frame}{\mbox{ }}
+\LARGE
+\begin{center}
+\textcolor{darkblue}{Now, back to the physics world}
+\end{center}
+\end{frame}
+
+
 
 
 
