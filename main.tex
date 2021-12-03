@@ -157,18 +157,172 @@ While waiting for the computer to be shipped, Enrico Fermi invented an analog de
 \begin{center}
 \includegraphics[height=5 cm]{PLOTS/1952-Maniac-1.jpg}\hspace{0.1 cm}\includegraphics[height=5 cm]{PLOTS/metropolis.jpg}
 
+\newcommand\redsout{\bgroup\markoverwith{\textcolor{red}{\rule[0.5ex]{2pt}{0.8pt}}}\ULon}
+
 \vspace{0.5 cm}
-\only<1>{{\bf M}athematical {\bf A}nalyzer {\bf N}umerical {\bf I}ntegrator and {\bf A}utomatic {\bf C}omputer}\only<2>{\sout{{\bf M}athematical {\bf A}nalyzer {\bf N}umerical {\bf I}ntegrator and {\bf A}utomatic {\bf C}omputer}}\only<3>{{\bf M}etropolis {\bf A}nd {\bf N}eumann {\bf I}nvent {\bf A}wful {\bf C}ontraption}
+\only<1>{{\bf M}athematical {\bf A}nalyzer {\bf N}umerical {\bf I}ntegrator and {\bf A}utomatic {\bf C}omputer}\only<2>{\redsout{{\bf M}athematical {\bf A}nalyzer {\bf N}umerical {\bf I}ntegrator and {\bf A}utomatic {\bf C}omputer}}\only<3>{{\bf M}etropolis {\bf A}nd {\bf N}eumann {\bf I}nvent {\bf A}wful {\bf C}ontraption}
 \end{center}
 \end{frame}
 
 \begin{frame}{Meanwhile, Mauchly and Eckert went into industry}
 
+\begin{center}
+\includegraphics[height=5.5 cm]{PLOTS/univac-walter-cronkite.jpg}\only<3>{\hspace{0.3 cm}\includegraphics[height=5.5 cm]{PLOTS/Grace_Hopper_and_UNIVAC.jpg}}
+\end{center}
 
+Eckert–Mauchly Computer Corporation produced UNIVAC systems for clients.
 
-
-
+\vspace{0.1 cm}
+\uncover<2->{As a promotion, they had it predict the 1952 presidential election on live TV. It predicted Eisenhower in a landslide (with only 5\% of the votes), contrary to polls.}
 \end{frame}
+
+\begin{frame}{Programming languages}
+\vspace{0.35 cm}
+\begin{itemize}\setlength{\itemsep}{0.35 cm}
+\item<1-> ENIAC (1945) was programmed by ``plugboard,'' wiring up a sequence of steps.
+
+\item<2-> EDVAC (1949) stored instructions in memory as series of integers: machine code.
+
+\item<3-> Kathleen Booth's assembly language (1947): still a series of instructions, but transliterated to a readable notation (technical design for ARC in Manchester).
+
+\vspace{0.1 cm}
+\begin{columns}
+\column{0.75\linewidth}
+\includegraphics[width=\linewidth]{PLOTS/contracted-notation-kathleen-booth.png}
+
+\column{0.25\linewidth}
+\includegraphics[width=\linewidth]{PLOTS/kathleen-booth.jpg}
+\end{columns}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Programming languages}
+\vspace{0.35 cm}
+\begin{itemize}\setlength{\itemsep}{0.35 cm}
+\item John Mauchly's ``Short Code'' (1949): real mathematical expressions, rather than a series of instructions assigned to registers. However, it had to be typed in a alphanumeric code.
+
+\vspace{0.5 cm}
+\begin{minipage}{0.8\linewidth}
+\begin{verbatim}
+math: X3 =  (  X1 +  Y1 )  /  X1 * Y1
+code: X3 03 09 X1 07 Y1 02 04 X1   Y1
+\end{verbatim}
+\end{minipage}
+
+\vspace{0.5 cm}
+\uncover<2->{Intended to make UNIVAC easier for clients to use, but it was interpreted in real time and hence 50$\times$ slower than direct machine code.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Programming languages}
+\vspace{0.35 cm}
+Grace Hopper (Naval Commander and Eckert–Mauchly's first Director of Automatic Programming) wanted computers to understand English words as commands.
+
+\begin{columns}
+\column{0.7\linewidth}
+\vspace{0.25 cm}
+\begin{onlyenv}<1>
+\begin{itemize}
+\item FLOW-MATIC (1955): compiled, not interpreted
+
+\vspace{0.1 cm}
+\tiny
+\begin{verbatim}
+ (0)  INPUT INVENTORY FILE-A PRICE FILE-B ; OUTPUT PRICED-INV FILE-C
+  UNPRICED-INV FILE-D ; HSP D .
+ (1)  COMPARE PRODUCT-NO (A) WITH PRODUCT-NO (B) ; IF GREATER GO TO
+  OPERATION 10 ; IF EQUAL GO TO OPERATION 5 ; OTHERWISE GO TO OPERATION 2 .
+ (2)  TRANSFER A TO D .
+ (3)  WRITE-ITEM D .
+ (4)  JUMP TO OPERATION 8 .
+ (5)  TRANSFER A TO C .
+ (6)  MOVE UNIT-PRICE (B) TO UNIT-PRICE (C) .
+ (7)  WRITE-ITEM C .
+ (8)  READ-ITEM A ; IF END OF DATA GO TO OPERATION 14 .
+ (9)  JUMP TO OPERATION 1 .
+(10)  READ-ITEM B ; IF END OF DATA GO TO OPERATION 12 .
+(11)  JUMP TO OPERATION 1 .
+(12)  SET OPERATION 9 TO GO TO OPERATION 2 .
+(13)  JUMP TO OPERATION 2 .
+(14)  TEST PRODUCT-NO (B) AGAINST ; IF EQUAL GO TO OPERATION 16 ;
+  OTHERWISE GO TO OPERATION 15 .
+(15)  REWIND B .
+(16)  CLOSE-OUT FILES C ; D .
+(17)  STOP . (END)
+\end{verbatim}
+\normalsize
+\end{itemize}
+\end{onlyenv}\begin{onlyenv}<2>
+\begin{itemize}
+\item MATH-MATIC (1957): also compiled
+
+\vspace{0.1 cm}
+\tiny
+\begin{verbatim}
+(2)  TYPE-IN ALPHA . 
+(2A) READ A B C SERVO 4 STORAGE A IF SENTINEL JUMP TO SENTENCE 8 . 
+(3)  READ D F SERVO 5 . 
+(4)  VARY Y 1 (0.1) 3 SENTENCE 5 THRU 6 . 
+(5)  X1 = (7*103*Y*A*SIN ALPHA)3 / (B POW D+C POW E) . 
+(6)  WRITE AND EDIT A Y D E X1 SERVO 6 . 
+(7)  JUMP TO SENTENCE 2A . 
+(8)  CLOSE-INPUT AND REWIND SENTENCE 3 . 
+(9)  CLOSE-OUTPUT SENTENCE 6 . 
+(10) READ F G H N SERVO 4 STORAGE A IF SENTINEL JUMP TO SENTENCE 20 . 
+(11) EXECUTE SENTENCE 3 . 
+(12) X2 = (3 ROOT (E-G)+LOG (D+N)) / (F2.6*EXP H) . 
+(13) WRITE EDIT F D F X2 SERVO 6 . 
+(16) JUMP TO SENTENCE 10 . 
+(20) STOP .
+\end{verbatim}
+\normalsize
+\end{itemize}
+\end{onlyenv}\begin{onlyenv}<3>
+\begin{itemize}
+\item COBOL (1959): maybe you've heard of it?
+
+\vspace{0.1 cm}
+\tiny
+\begin{verbatim}
+      $ SET SOURCEFORMAT"FREE"
+IDENTIFICATION DIVISION.
+PROGRAM-ID.  Multiplier.
+
+DATA DIVISION.
+
+WORKING-STORAGE SECTION.
+01  Num1                                PIC 9  VALUE ZEROS.
+01  Num2                                PIC 9  VALUE ZEROS.
+01  Result                              PIC 99 VALUE ZEROS.
+
+PROCEDURE DIVISION.
+    DISPLAY "Enter first number  (1 digit) : " WITH NO ADVANCING.
+    ACCEPT Num1.
+    DISPLAY "Enter second number (1 digit) : " WITH NO ADVANCING.
+    ACCEPT Num2.
+    MULTIPLY Num1 BY Num2 GIVING Result.
+    DISPLAY "Result is = ", Result.
+    STOP RUN.
+\end{verbatim}
+\normalsize
+\end{itemize}
+\end{onlyenv}\begin{onlyenv}<4>
+\begin{itemize}
+\item Coined the terms ``program,'' ``compile,'' and ``bug.''
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{PLOTS/First_Computer_Bug,_1945.jpg}
+\end{center}
+\end{itemize}
+\end{onlyenv}
+
+\column{0.27\linewidth}
+\vspace{0.6 cm}
+\includegraphics[width=\linewidth]{PLOTS/Grace-Murray-Hopper-Bureau-of-Ordnance-Computation-1946.jpg}
+\vspace{0.6 cm}
+\end{columns}
+\end{frame}
+
 
 
 \end{document}
