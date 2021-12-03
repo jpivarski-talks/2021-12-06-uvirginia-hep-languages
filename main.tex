@@ -199,7 +199,7 @@ Eckert–Mauchly Computer Corporation produced UNIVAC systems for clients.
 \begin{frame}[fragile]{Programming languages}
 \vspace{0.35 cm}
 \begin{itemize}\setlength{\itemsep}{0.35 cm}
-\item John Mauchly's ``Short Code'' (1949): real mathematical expressions, rather than a series of instructions assigned to registers. However, it had to be typed in a alphanumeric code.
+\item John Mauchly's ``Short Code'' (1949): real mathematical expressions, rather than a series of instructions, passing values to registers. However, it had to be typed in an alphanumeric code.
 
 \vspace{0.5 cm}
 \begin{minipage}{0.8\linewidth}
@@ -210,7 +210,7 @@ code: X3 03 09 X1 07 Y1 02 04 X1   Y1
 \end{minipage}
 
 \vspace{0.5 cm}
-\uncover<2->{Intended to make UNIVAC easier for clients to use, but it was interpreted in real time and hence 50$\times$ slower than direct machine code.}
+\uncover<2->{It was intended to make UNIVAC easier for clients to use, but it was an interpreter (the first!), stepping through the code in real time---and hence, 50$\times$ slower.}
 \end{itemize}
 \end{frame}
 
@@ -384,11 +384,11 @@ IBM 650 was mass-produced: 2,000 sold!
 
 \item \textcolor{darkblue}{Simula (Ole-Johan Dahl/Kristen Nygaard, 1962):} object-oriented programming.
 
-\item \textcolor{darkblue}{APL (Kenneth Iverson, 1966):} concise, interactive, operates on arrays.
+\item \textcolor{darkblue}{APL (Kenneth Iverson, 1966):} concise, interactive, vectorwise array handling.
 
 \item \textcolor{darkblue}{ISWIM (Peter Landin, 1966):} strongly typed functional programming, like Haskell.
 
-\item \textcolor{darkblue}{FORTH (Charles Moore, 1970):} no functions or syntax, just words and a stack.
+\item \textcolor{darkblue}{FORTH (Charles Moore, 1970):} no functions or syntax, just words and a stack!
 
 \item \textcolor{darkblue}{Prolog (Alain Colmerauer/Robert Kowalski, 1972):} first-order logic solver.
 
@@ -465,7 +465,7 @@ Unlabeled photos come out of the detector.
 \includegraphics[width=0.5\linewidth]{PLOTS/madeleine-isenberg-SCANNER.png}
 
 \scriptsize
-Madeleine (n\'ee Goldstein) Isenberg, UCLA 1965
+Madeleine (n\'ee Goldstein) Isenberg, UCLA class of '65
 \end{center}
 
 \begin{minipage}{\linewidth}
@@ -503,9 +503,99 @@ Became a software engineer, project manager, financial advisor, technology consu
 \end{columns}
 \end{frame}
 
+\begin{frame}{Manual $\to$ semi-automated $\to$ automated}
+\vspace{0.25 cm}
+\begin{columns}
+\column{0.7\linewidth}
+\textcolor{darkblue}{Later development:} the Spiral Reader
 
+\vspace{0.1 cm}
+Operator only needs to center the spiral on the vertex and a program finds tracks through its intersections with the spiral.
 
+\begin{center}
+\includegraphics[width=0.7\linewidth]{PLOTS/spiral-reader-3.jpg}
+\end{center}
 
+\column{0.3\linewidth}
+\includegraphics[width=\linewidth]{PLOTS/spiral-reader-1.jpg}
+
+\includegraphics[width=\linewidth]{PLOTS/spiral-reader-2.jpg}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}{Source control management}
+\vspace{0.25 cm}
+
+\includegraphics[height=7 cm]{PLOTS/assembly-language-program-berkeley.png}
+
+\vspace{-6.9 cm}
+\uncover<2->{\mbox{\hspace{1.8 cm}\includegraphics[height=7 cm]{PLOTS/assembly-language-program-berkeley-1.png}}}
+
+\vspace{-6.9 cm}
+\uncover<3->{\mbox{\hspace{3.6 cm}\includegraphics[height=7 cm]{PLOTS/assembly-language-program-berkeley-2.png}}}
+
+\vspace{-6.9 cm}
+\uncover<4->{\mbox{\hspace{5.4 cm}\includegraphics[height=7 cm]{PLOTS/assembly-language-program-berkeley-3.png}}}
+
+\vspace{-6.9 cm}
+\uncover<5->{\mbox{\hspace{7.2 cm}\includegraphics[height=7 cm]{PLOTS/assembly-language-program-berkeley-4.png}}}
+
+\vspace{-6.9 cm}
+\uncover<6->{\mbox{\hspace{9 cm}\includegraphics[height=7 cm]{PLOTS/assembly-language-program-berkeley-5.png}}}
+\end{frame}
+
+\begin{frame}{CERN Courier special issues on computing}
+\large
+\begin{columns}
+\column{0.55\linewidth}
+\begin{center}
+September 1967
+
+\vspace{0.2 cm}
+\includegraphics[width=0.55\linewidth]{PLOTS/cern-courier-1.png}
+
+\vspace{0.5 cm}
+\end{center}
+
+\column{0.55\linewidth}
+\begin{center}
+March 1972
+
+\vspace{0.2 cm}
+\includegraphics[width=0.55\linewidth]{PLOTS/cern-courier-2.png}
+
+\vspace{0.5 cm}
+\end{center}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Source control management}
+\large
+\begin{columns}
+\column{0.55\linewidth}
+\begin{center}
+September 1967
+
+\vspace{0.2 cm}
+\includegraphics[width=0.55\linewidth]{PLOTS/cern-courier-1.png}
+
+\vspace{-5 cm}
+\mbox{\hspace{0.5 cm}\includegraphics[height=5.5 cm]{PLOTS/patchy-1.png}}
+\end{center}
+
+\column{0.55\linewidth}
+\begin{center}
+March 1972
+
+\vspace{0.2 cm}
+\includegraphics[width=0.55\linewidth]{PLOTS/cern-courier-2.png}
+
+\vspace{-5 cm}
+\mbox{\hspace{2 cm}\includegraphics[height=5.5 cm]{PLOTS/patchy-2.png}}
+\end{center}
+\end{columns}
+\end{frame}
 
 \end{document}
 
