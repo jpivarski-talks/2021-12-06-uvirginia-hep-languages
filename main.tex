@@ -323,6 +323,61 @@ PROCEDURE DIVISION.
 \end{columns}
 \end{frame}
 
+\begin{frame}{Despite UNIVAC's popularity, Eckert–Mauchly Corporation failed}
+\vspace{0.165 cm}
+\begin{columns}
+\column{1.15\linewidth}
+\includegraphics[width=\linewidth]{PLOTS/univac_front_panel.jpg}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{A programming language from \raisebox{-0.13 cm}{\includegraphics[height=0.55 cm]{PLOTS/ibm-logo-1950s}}}
+\vspace{0.3 cm}
+\begin{itemize}\setlength{\itemsep}{0.35 cm}
+\item IBM had been in business since 1911 as Computing-Tabulating-Recording Company, producing tabulators, time-card machines, scales, and punch-cards.
+
+\vspace{0.25 cm}
+
+\uncover<2->{\hfill\includegraphics[height=5 cm]{PLOTS/us__en_us__ibm100__700_series__705__800x640.jpg}}
+
+\vspace{-5.25 cm}
+
+\item<2-> After initial reluctance, IBM adopted
+
+the stored-program/tape-drive paradigm.
+
+\item<3-> FORTRAN (John Backus's team, 1956):
+
+\vspace{0.25 cm}
+\hspace{-1 cm}\begin{minipage}{0.5\linewidth}
+\tiny
+\begin{minted}{fortran}
+C AREA OF A TRIANGLE - HERONS FORMULA
+C INTEGRAL VARIABLES START WITH I,J,K,L,M,N
+      READ(5,501) IA,IB,IC
+  501 FORMAT(3I5)
+      IF(IA.EQ.0 .OR. IB.EQ.0 .OR. IC.EQ.0) STOP 1
+      S = (IA + IB + IC) / 2.0
+      AREA = SQRT( S * (S - IA) * (S - IB) * (S - IC) )
+      WRITE(6,601) IA,IB,IC,AREA
+  601 FORMAT(4H A= ,I5,5H  B= ,I5,5H  C= ,I5,8H  AREA= ,F10.2,
+     $13H SQUARE UNITS)
+      STOP
+      END
+\end{minted}
+\end{minipage}
+
+\vspace{0.25 cm}
+\uncover<4->{Compiled, with human-readable words, but unapologetically mathematical and focused on speed. World's first {\it optimizing} compiler.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Other first languages}
+
+
+
+\end{frame}
+
 
 
 \end{document}
