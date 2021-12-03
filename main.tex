@@ -21,6 +21,7 @@
 \usepackage{bold-extra}
 \usepackage{minted}
 \usepackage[thicklines]{cancel}
+\usepackage{ulem}
 \usepackage{fancyvrb}
 
 \xdefinecolor{dianablue}{rgb}{0.18,0.24,0.31}
@@ -67,7 +68,7 @@
 \begin{frame}{\mbox{ }}
 \LARGE
 \begin{center}
-\textcolor{darkblue}{Physicists were involved in (some of) \\ the earliest computers}
+\textcolor{darkblue}{\only<1>{Physicists invented the first digital computer}\only<2>{\xcancel{Physicists invented the first digital computer}}\only<3>{Physicists invented \textcolor{purple}{one of} the first digital computer\textcolor{purple}{s}}}
 \end{center}
 \end{frame}
 
@@ -87,11 +88,11 @@
 Konrad Zuse's Z1 computer, built in his parents' living room in Berlin in 1937 (destroyed with all blueprints in 1943).
 
 \column{0.5\linewidth}
-Colossus Mark 2, operated by Dorothy Du Boisson and Elsie Booker at Britain's codebreaking lab in 1943.
+Colossus Mark 2, operated here by Dorothy Du Boisson and Elsie Booker at Britain's secret codebreaking lab in 1943.
 \end{columns}
 \end{frame}
 
-\begin{frame}{But this one: ENIAC, the first widely-known computer (1945)}
+\begin{frame}{But this one: ENIAC, the first {\it widely-known} computer (1945)}
 \vspace{0.35 cm}
 
 \mbox{\hspace{-0.25 cm}\includegraphics[height=7.5 cm]{PLOTS/eniac-1.jpg}}
@@ -109,14 +110,22 @@ Colossus Mark 2, operated by Dorothy Du Boisson and Elsie Booker at Britain's co
 \begin{onlyenv}<4->
 \vspace{-7.5 cm}
 \mbox{\hspace{2.75 cm}\includegraphics[height=7.5 cm]{PLOTS/eniac-4.jpg}}
-
-\vspace{-2 cm}
-\begin{center}
-\hspace{3.75 cm}\textcolor{yellow}{\bf Worth mentioning: all 6 of}
-
-\hspace{3.75 cm}\textcolor{yellow}{\bf ENIAC's programmers were women}
-\end{center}
 \end{onlyenv}
+\end{frame}
+
+\begin{frame}{Hardware designed by}
+\vspace{0.15 cm}
+\begin{center}
+J.\ Presper Eckert, electrical engineer, and John Mauchly, physicist (at U.\ Pennsylvania)
+
+\vspace{0.25 cm}
+\mbox{\includegraphics[height=5 cm]{PLOTS/john-mauchly-AND-presper-eckert.jpg}\only<2>{\hspace{0.1 cm}\includegraphics[height=5 cm]{PLOTS/mauchly-report.jpg}}\only<3>{\hspace{0.1 cm}\includegraphics[height=5 cm]{PLOTS/mauchly-eckert-AND-gladeon-barnes.jpg}}}
+\end{center}
+
+\uncover<2->{Mauchly proposed ``The Use of High-Speed Vacuum Tube Devices for Calculating''}
+
+\vspace{0.1 cm}
+\uncover<3->{It was funded, project led by Army General Gladeon Barnes, and computed trajectories 1000$\times$ faster than mechanical computers.}
 \end{frame}
 
 \end{document}
