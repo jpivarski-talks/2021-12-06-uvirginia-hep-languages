@@ -134,17 +134,17 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="314.73636"
-     inkscape:cy="170.73003"
+     inkscape:cx="222.81248"
+     inkscape:cy="169.71988"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:object-paths="false"
      inkscape:object-nodes="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1043"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
+     inkscape:window-height="1136"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:snap-nodes="true"
      fit-margin-top="5"
@@ -263,55 +263,60 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.10000002;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="63.743782"
-       y="122.20573"
+       x="64.946495"
+       y="121.93845"
        id="text4937"><tspan
          sodipodi:role="line"
          id="tspan4935"
-         x="63.743782"
-         y="122.20573"
-         style="stroke-width:0.26458332">commercialization</tspan></text>
+         x="64.946495"
+         y="121.93845"
+         style="stroke-width:0.26458332">high-level</tspan><tspan
+         sodipodi:role="line"
+         x="64.946495"
+         y="125.81901"
+         style="stroke-width:0.26458332"
+         id="tspan977">languages</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.10000002;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="103.0324"
+       x="102.09696"
        y="134.50012"
        id="text4941"><tspan
          sodipodi:role="line"
          id="tspan4939"
-         x="103.0324"
+         x="102.09696"
          y="134.50012"
          style="stroke-width:0.26458332">personal</tspan><tspan
          sodipodi:role="line"
-         x="103.0324"
+         x="102.09696"
          y="138.38068"
          style="stroke-width:0.26458332"
          id="tspan4943">computers</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.10000002;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="132.2034"
-       y="130.22382"
+       x="135.54427"
+       y="127.95203"
        id="text4947"><tspan
          sodipodi:role="line"
          id="tspan4945"
-         x="132.2034"
-         y="130.22382"
+         x="135.54427"
+         y="127.95203"
          style="stroke-width:0.26458332">big data!</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.10000002;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="79.111786"
-       y="129.15472"
+       x="80.849037"
+       y="130.89198"
        id="text4951"><tspan
          sodipodi:role="line"
          id="tspan4949"
-         x="79.111786"
-         y="129.15472"
+         x="80.849037"
+         y="130.89198"
          style="stroke-width:0.26458332">artificial</tspan><tspan
          sodipodi:role="line"
-         x="79.111786"
-         y="133.03528"
+         x="80.849037"
+         y="134.77254"
          style="stroke-width:0.26458332"
          id="tspan4953">intelligence</tspan></text>
     <text
@@ -333,24 +338,29 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.10000002;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="66.416481"
-       y="101.22507"
+       x="67.752831"
+       y="98.418739"
        id="text4963"><tspan
          sodipodi:role="line"
          id="tspan4961"
-         x="66.416481"
-         y="101.22507"
-         style="stroke-width:0.26458332">DAQ</tspan></text>
+         x="67.752831"
+         y="98.418739"
+         style="stroke-width:0.26458332">data</tspan><tspan
+         sodipodi:role="line"
+         x="67.752831"
+         y="102.29929"
+         style="stroke-width:0.26458332"
+         id="tspan1002">acquistion</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.10000002;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="82.452652"
-       y="92.67244"
+       x="82.853554"
+       y="92.271538"
        id="text4967"><tspan
          sodipodi:role="line"
          id="tspan4965"
-         x="82.452652"
-         y="92.67244"
+         x="82.853554"
+         y="92.271538"
          style="stroke-width:0.26458332">triggering</tspan></text>
     <text
        xml:space="preserve"
@@ -362,7 +372,7 @@
          id="tspan4969"
          x="105.83873"
          y="88.663414"
-         style="stroke-width:0.26458332">clustering</tspan></text>
+         style="stroke-width:0.26458332">batch farms</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.10000002;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -529,5 +539,16 @@
        d="m 148.85533,111.38131 v 1.5201"
        id="path1779"
        inkscape:connector-curvature="0" />
+    <text
+       id="text981"
+       y="133.43105"
+       x="121.11171"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.10000002;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         y="133.43105"
+         x="121.11171"
+         id="tspan979"
+         sodipodi:role="line">internet</tspan></text>
   </g>
 </svg>
