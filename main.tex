@@ -729,7 +729,23 @@ P.\ Zanella, {\it Trends in Computing for HEP} (1985)
 \end{center}
 \end{frame}
 
-\begin{frame}{Regex matches of all CHEP titles and abstracts, 1985--2021}
+\begin{frame}{\mbox{ }}
+\vspace{0.5 cm}
+\Large
+\begin{center}
+\begin{minipage}{0.8\linewidth}
+\textcolor{darkblue}{Physicists {\it did} stop using Fortran in the late 1990's.}
+
+\vspace{0.5 cm}
+\uncover<2->{\textcolor{darkblue}{Largely switched to C++, where the data structures are free (but serialization isn't).}}
+
+\vspace{0.5 cm}
+\uncover<3->{\textcolor{darkblue}{The CHEP conferences cover that timespan, can we see the transition?}}
+\end{minipage}
+\end{center}
+\end{frame}
+
+\begin{frame}{\only<1>{Regex matches of all CHEP titles and abstracts, 1985--2021}\only<2>{What about programming {\it paradigms}?}\only<3>{What about specific {\it packages}?}\only<4>{The denominator (total number of talks) explains the weird dips.}}
 \vspace{0.15 cm}
 \begin{columns}
 \column{1.1\linewidth}
@@ -744,16 +760,74 @@ P.\ Zanella, {\it Trends in Computing for HEP} (1985)
 \end{columns}
 
 \vspace{0.5 cm}
-\begin{itemize}
-\item<2-> Physicists are widely distributed among labs and universities: perceptions like, ``everyone/nobody I know uses Python'' can be very misleading.
+\begin{itemize}\setlength{\itemsep}{0.25 cm}
+\item<2-> Physicists are widely distributed among labs and universities. Perceptions like, ``everyone/nobody I know uses Python'' can be very misleading.
 
 \item<3-> How can we tell what people are actually using (not just talking about at CHEP)?
 \end{itemize}
 \end{frame}
 
+\begin{frame}{GitHub API allows for some incisive searches}
+\vspace{0.25 cm}
+\includegraphics[width=\linewidth]{PLOTS/github-api-website.png}
+\end{frame}
 
+\begin{frame}{Assume: nearly everyone who forks CMSSW is a CMS physicist}
+\vspace{0.25 cm}
+Among the GitHub users who forked CMSSW, what non-fork repositories do they have?
 
+\vspace{0.25 cm}
+\mbox{ }\hfill\includegraphics[width=0.88\linewidth]{PLOTS/lhlhc-github-languages-paper.pdf}\hfill\mbox{ }
+\end{frame}
 
+\begin{frame}{How about {\it search terms} within the CMS users' repositories?}
+\vspace{0.25 cm}
+\includegraphics[width=\linewidth]{PLOTS/lhlhc-github-overlay-lin-paper.pdf}
+\end{frame}
+
+\begin{frame}{All the different ways of spelling ``ROOT''}
+\vspace{-0.75 cm}
+\begin{columns}
+\column{1.15\linewidth}
+\includegraphics[width=\linewidth]{PLOTS/gihub-search-python-root-variations.pdf}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Breakdown of the ``Python ecosystem''}
+\vspace{-0.75 cm}
+\begin{columns}
+\column{1.15\linewidth}
+\only<1>{\includegraphics[width=\linewidth]{PLOTS/gihub-search-python-ecosystem.pdf}}\only<2>{\includegraphics[width=\linewidth]{PLOTS/gihub-search-python-ecosystem-ml.pdf}}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Wait---isn't machine learning leading the charge?}
+\vspace{0.25 cm}
+\mbox{\hspace{-0.5 cm}\textcolor{darkblue}{Back to CHEP papers:} there's certainly a resurgence (with more synonyms than in the 1990's)}
+
+\includegraphics[width=\linewidth]{PLOTS/chep-papers-ml.pdf}
+\end{frame}
+
+\begin{frame}{CHEP word-matches and GitHub word-matches on the same plot}
+\vspace{-0.25 cm}
+\begin{columns}
+\column{1.1\linewidth}
+\includegraphics[width=\linewidth]{PLOTS/gihub-search-python-ecosystem-overlay.pdf}
+\end{columns}
+
+\vspace{-6.25 cm}
+\uncover<2->{\mbox{ }\hfill\fcolorbox{black}{white}{\begin{minipage}{0.65\linewidth}\vspace{0.75 cm}\begin{center}\begin{minipage}{0.75\linewidth}\Large They do coincide in time. \\ Neither is clearly before the other.\end{minipage}\end{center}\vspace{0.5 cm}\end{minipage}}\hfill\mbox{ }}
+\vspace{6.25 cm}
+\end{frame}
+
+\begin{frame}{Also corresponds to Python + ML's explosion outside of HEP}
+\large
+\vspace{0.25 cm}
+\textcolor{darkblue}{Google Trends} results for combinations of words in the same Google search:
+
+\vspace{0.25 cm}
+\includegraphics[width=\linewidth]{PLOTS/analytics-by-language.pdf}
+\end{frame}
 
 
 
