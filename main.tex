@@ -200,7 +200,7 @@ Eckert–Mauchly Computer Corporation produced UNIVAC systems for clients.
 \begin{frame}[fragile]{Programming languages}
 \vspace{0.35 cm}
 \begin{itemize}\setlength{\itemsep}{0.35 cm}
-\item John Mauchly's ``Short Code'' (1949): real mathematical expressions, rather than a series of instructions, passing values to registers. However, it had to be typed in an alphanumeric code.
+\item John Mauchly's ``Short Code'' (1949): real mathematical expressions, rather than a series of instructions, passing values in and out of registers. However, it had to be typed in an alphanumeric code.
 
 \vspace{0.5 cm}
 \begin{minipage}{0.8\linewidth}
@@ -286,24 +286,24 @@ Grace Hopper (Naval Commander and Eckert–Mauchly's first Director of Automatic
 \tiny
 \begin{minted}{cobol}
       $ SET SOURCEFORMAT"FREE"
-IDENTIFICATION DIVISION.
-PROGRAM-ID.  Multiplier.
+      IDENTIFICATION DIVISION.
+      PROGRAM-ID.  Multiplier.
 
-DATA DIVISION.
+      DATA DIVISION.
 
-WORKING-STORAGE SECTION.
-01  Num1                                PIC 9  VALUE ZEROS.
-01  Num2                                PIC 9  VALUE ZEROS.
-01  Result                              PIC 99 VALUE ZEROS.
+      WORKING-STORAGE SECTION.
+      01  Num1                                PIC 9  VALUE ZEROS.
+      01  Num2                                PIC 9  VALUE ZEROS.
+      01  Result                              PIC 99 VALUE ZEROS.
 
-PROCEDURE DIVISION.
-    DISPLAY "Enter first number  (1 digit) : " WITH NO ADVANCING.
-    ACCEPT Num1.
-    DISPLAY "Enter second number (1 digit) : " WITH NO ADVANCING.
-    ACCEPT Num2.
-    MULTIPLY Num1 BY Num2 GIVING Result.
-    DISPLAY "Result is = ", Result.
-    STOP RUN.
+      PROCEDURE DIVISION.
+          DISPLAY "Enter first number  (1 digit) : " WITH NO ADVANCING.
+          ACCEPT Num1.
+          DISPLAY "Enter second number (1 digit) : " WITH NO ADVANCING.
+          ACCEPT Num2.
+          MULTIPLY Num1 BY Num2 GIVING Result.
+          DISPLAY "Result is = ", Result.
+          STOP RUN.
 \end{minted}
 \normalsize
 \end{itemize}
@@ -693,7 +693,7 @@ R.K.\ B\"ock and J.\ Zoll, {\it Central Computers in the Analysis}, CERN Courier
 \end{center}
 \end{frame}
 
-\begin{frame}{Data structures are common (ALGOL, PL/I, Pascal, Ada, Eiffel\ldots)}
+\begin{frame}{Most languages had the data structures Fortran lacked, such as C}
 \vspace{0.5 cm}
 \begin{center}
 \begin{minipage}{0.8\linewidth}
@@ -730,19 +730,38 @@ P.\ Zanella, {\it Trends in Computing for HEP} (1985)
 \end{frame}
 
 \begin{frame}{\mbox{ }}
-\vspace{0.5 cm}
+\vspace{1 cm}
+\Large
+\begin{center}
+\begin{minipage}{0.8\linewidth}
+\textcolor{darkblue}{Physicists {\it did} stop using Fortran in the late 1990's.}
+
+\end{minipage}
+\end{center}
+
+\begin{columns}
+\column{1.1\linewidth}
+\uncover<2->{\includegraphics[width=0.24\linewidth]{PLOTS/root-website-1.png}}\hfill\uncover<3->{\includegraphics[width=0.24\linewidth]{PLOTS/root-website-2.png}}\hfill\uncover<4->{\includegraphics[width=0.24\linewidth]{PLOTS/root-website-3.png}}\hfill\uncover<5->{\includegraphics[width=0.24\linewidth]{PLOTS/root-website-4.png}}
+\end{columns}
+
+\vspace{0.25 cm}
+\end{frame}
+
+\begin{frame}{\mbox{ }}
+\vspace{1 cm}
 \Large
 \begin{center}
 \begin{minipage}{0.8\linewidth}
 \textcolor{darkblue}{Physicists {\it did} stop using Fortran in the late 1990's.}
 
 \vspace{0.5 cm}
-\uncover<2->{\textcolor{darkblue}{Largely switched to C++, where the data structures are free (but serialization isn't).}}
+\textcolor{darkblue}{Largely switched to C++, where the data structures are free (but serialization isn't).}
 
 \vspace{0.5 cm}
-\uncover<3->{\textcolor{darkblue}{The CHEP conferences cover that timespan, can we see the transition?}}
+\uncover<2->{\textcolor{darkblue}{The CHEP conferences cover that timespan, can we see the transition?}}
 \end{minipage}
 \end{center}
+\vspace{1 cm}
 \end{frame}
 
 \begin{frame}{\only<1>{Regex matches of all CHEP titles and abstracts, 1985--2021}\only<2>{What about programming {\it paradigms}?}\only<3>{What about specific {\it packages}?}\only<4>{The denominator (total number of talks) explains the weird dips.}}
@@ -837,6 +856,13 @@ Among the GitHub users who forked CMSSW, what non-fork repositories do they have
 \end{columns}
 \end{frame}
 
+\begin{frame}{Widespread familiarity with data science tools (same survey)}
+\vspace{0.25 cm}
+\begin{center}
+\includegraphics[width=0.88\linewidth]{PLOTS/lhlhc-familiarity-with-packages-paper.pdf}
+\end{center}
+\end{frame}
+
 \begin{frame}{Python ecosystem has had as much time to evolve as the LHC}
 \vspace{0.18 cm}
 \begin{columns}
@@ -856,6 +882,133 @@ Among the GitHub users who forked CMSSW, what non-fork repositories do they have
 \end{center}
 \end{frame}
 
+\begin{frame}{We're no longer alone}
+\large
+\vspace{0.5 cm}
+\begin{columns}[t]
+\column{0.5\linewidth}
+Physicists in the 1950's were pushing computers beyond their limits:
+
+\vspace{0.25 cm}
+\begin{itemize}\setlength{\itemsep}{0.25 cm}
+\item<2-> Looking at a picture and seeing $N$ tracks is a {\it hard problem}. Even the concepts needed to express it were not in the FORTRAN language.
+
+\item<3-> Optimizing a fit function of a given set of tracks is relatively easy.
+
+\item<4-> Wanting to process ``as much data as possible'' is by definition pushing technology's limits.
+\end{itemize}
+
+\column{0.55\linewidth}
+\uncover<5->{Meanwhile, the following things happened in mainstream computing:}
+
+\vspace{0.25 cm}
+\begin{itemize}\setlength{\itemsep}{0.25 cm}
+\item<6-> Programming languages got more expressive.
+
+\item<7-> A whole field of science grew up around ``seeing things in a picture.''
+
+\item<8-> Computational power skyrocketed.
+
+\item<9-> The internet happened.
+
+\item<10-> A whole field of science grew up around ``processing as much data as possible.''
+\end{itemize}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}{}
+\vspace{-0.1 cm}
+\begin{columns}
+\column{1.2\linewidth}
+\includegraphics[width=\linewidth]{PLOTS/data-volumes.png}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Physics and mainstream computing have never been fully separate}
+\large
+\vspace{0.5 cm}
+\begin{itemize}\setlength{\itemsep}{0.75 cm}
+\item ALGOL, PL/I, Pascal, Ada, Eiffel, C, Objective C, and C++ (at least) were all {\it proposed} as languages for particle physics; they all fill FORTRAN's gaps.
+
+\item<2-> Physicists eagerly adopt new computer hardware, operating systems, etc.
+
+\item<3-> Physicists followed the development of neural networks with great interest.
+
+\item<4-> Technologies {\it did} transfer:
+
+\vspace{0.25 cm}
+\begin{itemize}\setlength{\itemsep}{0.25 cm}
+\item to HEP: object oriented programming
+
+\item from HEP: the World Wide Web
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{But there were also significant barriers}
+\large
+\vspace{0.5 cm}
+\begin{itemize}\setlength{\itemsep}{0.75 cm}
+\item Adoption of a language with data structures was $\sim$30 years overdue.
+
+\item<2-> Some innovations were ``locked'' in HEP, only to be rediscovered outside.
+
+\vspace{0.5 cm}
+\begin{uncoverenv}<3->
+\begin{center}
+{\it Dremel: Interactive Analysis of Web-Scale Datasets} (Google, 2010)
+
+\vspace{0.25 cm}
+\fbox{\includegraphics[width=0.5\linewidth]{PLOTS/dremel.png}}
+
+\vspace{0.25 cm}
+Columnar, nested data was a ROOT feature in 1995.
+\end{center}
+\end{uncoverenv}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{There's still resistance to mainstream practices}
+\vspace{0.15 cm}
+\begin{columns}
+\column{1.1\linewidth}
+\only<1>{\includegraphics[width=\linewidth]{PLOTS/chep-papers-package-2.pdf}}\only<2>{\includegraphics[width=\linewidth]{PLOTS/chep-papers-package-3.pdf}}
+\end{columns}
+\end{frame}
+
+\begin{frame}{But data analysts are more free now to select what they need}
+\vspace{0.15 cm}
+\begin{columns}
+\column{1.1\linewidth}
+\only<1>{\includegraphics[width=\linewidth]{PLOTS/chep-papers-language-2.pdf}}\only<2>{\includegraphics[width=\linewidth]{PLOTS/chep-papers-language-3.pdf}}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Conclusions}
+\large
+\vspace{0.5 cm}
+Since we were there at the beginning, physicists are the ultimate ``early adopters'' of computer technology.
+
+\vspace{0.5 cm}
+\uncover<2->{Computers weren't ready for us, so we developed brilliant custom solutions to get the work done.}
+
+\vspace{0.5 cm}
+\uncover<3->{Those HEP-specific choices became entrenched, preventing us from adopting mainstream solutions where possible and engaging computer scientists elsewhere.}
+
+\vspace{0.5 cm}
+\uncover<4->{Today, data scientists are solving HEP-like problems on web-scale datasets. Some of their solutions can work or be adapted to work for us.}
+
+\vspace{0.5 cm}
+\uncover<5->{Physicists have been quietly adopting those tools and practices, melting the domain boundaries that separate our fields.}
+\end{frame}
+
+\begin{frame}{}
+\begin{columns}
+\column{1.2\linewidth}
+\includegraphics[width=\linewidth]{PLOTS/domain-boundaries.jpg}
+\end{columns}
+\end{frame}
 
 \end{document}
 
